@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://open-eshop.stqa.ru/" />
+<title>create_cupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">create_cupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/oc-panel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#accordion a:[href='#collapseOne']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#accordion a:[href='#collapseOne']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#collapseOne a:[href='http://open-eshop.stqa.ru/oc-panel/coupon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#collapseOne a:[href='http://open-eshop.stqa.ru/oc-panel/coupon']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div#content a:[href='http://open-eshop.stqa.ru/oc-panel/Coupon/create']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div#content a:[href='http://open-eshop.stqa.ru/oc-panel/Coupon/create']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.panel.panel-default &gt; div.panel-body</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>zizu_lv</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=valid_date</td>
+	<td>2018-03-08</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=number_coupons</td>
+	<td>5</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.alert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.alert.alert-success</td>
+	<td>× SuccessCoupon zizu_lv created</td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>css=div.table-responsive&gt;table.1.0</td>
+	<td>zizu_lv</td>
+</tr>
+</tbody></table>
+</body>
+</html>
